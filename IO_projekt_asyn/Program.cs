@@ -62,7 +62,9 @@ namespace IO_projekt_asyn
 			do
 			{
 				Console.WriteLine();
+				Console.ForegroundColor = ConsoleColor.DarkRed;
 				Console.WriteLine("Project in development! Only P2 (pgm) and P3 (ppm) formats can be transformed. P1 (pbm) only for view.");
+				Console.ForegroundColor = default_foreground;			
 				Console.WriteLine("Choose file to load:"); ;
 				Console.WriteLine("1 - pliczek.pbm");
 				Console.WriteLine("2 - pliczek2.pgm");
@@ -73,10 +75,10 @@ namespace IO_projekt_asyn
 				option = int.Parse(Console.ReadLine());
 				switch (option)
 				{
-					case 0: img = new ImageNetPBM("pliczek.pbm"); break;
-					case 1: img = new ImageNetPBM("pliczek.pbm"); break;
-					case 2: img = new ImageNetPBM("pliczek2.pgm"); break;
-					case 3: img = new ImageNetPBM("pliczek3.ppm"); break;
+					case 0: img = new ImageNetPBM("files/pliczek.pbm"); break;
+					case 1: img = new ImageNetPBM("files/pliczek.pbm"); break;
+					case 2: img = new ImageNetPBM("files/pliczek2.pgm"); break;
+					case 3: img = new ImageNetPBM("files/pliczek3.ppm"); break;
 					case 4:
 						{
 							Console.WriteLine("Write file path. If file is in bin/Debug folder, you can write only file name");

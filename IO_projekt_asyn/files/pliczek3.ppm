@@ -1,0 +1,9 @@
+P3
+# The same image with width 3 and height 2,
+# using 0 or 1 per color (red, green, blue)
+4 4
+15
+15 0 0	10 0 5	5 0 10	0 0 15
+10 0 5	10 0 5	5 0 10	0 0 15
+5 0 10	5 0 10	5 0 10	0 0 15
+0 0 15	0 0 15	0 0 15	0 0 15
